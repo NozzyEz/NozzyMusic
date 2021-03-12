@@ -1,0 +1,44 @@
+@use '../abstracts/index' as *;
+.dark-mode {
+  background-color: rgb(76, 76, 76);
+  color: rgb(226, 226, 226);
+
+  &.track-container {
+    &.selected {
+      background-color: rgb(125, 31, 137);
+    }
+  }
+  &.playlist {
+    background-color: rgb(76, 76, 76);
+    color: rgb(226, 226, 226);
+    box-shadow: 2px 2px 20px $dark-shadow-color1, 2px 2px 80px $dark-shadow-color2 !important;
+  }
+
+  .song-cover {
+    // box-shadow: none !important;
+    box-shadow: 2px 2px 20px $dark-shadow-color1, 2px 2px 80px $dark-shadow-color2 !important;
+  }
+  &.player {
+    .play-control {
+      .repeater {
+        background-color: $background-color;
+        color: $text-color;
+      }
+    }
+  }
+  button {
+    border: 2px solid $background-color;
+    color: $background-color;
+    font-size: $paragraph;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $background-color;
+      color: $text-color;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

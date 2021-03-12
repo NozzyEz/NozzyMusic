@@ -1,5 +1,10 @@
-$header1: 3rem;
-$header2: 3.5rem;
-$header3: 2.8rem;
+$header1: 3.5rem;
+$header2: 4rem;
+$header3: 2.2rem;
 $header4: 2rem;
 $paragraph: 1.6rem;
+
+@font-face {
+  font-family: 'Fjella One';
+  src: url('../../fonts/FjallaOne-Regular.ttf');
+}

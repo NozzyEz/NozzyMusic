@@ -1,0 +1,13 @@
+@use '../abstracts/index' as *;
+
+.nav-bar {
+  min-height: 15vh;
+  z-index: 1;
+  // width: 10vw;
+  padding: 2rem;
+  @include flex(center, center, column);
+  .nav-container {
+    width: 100%;
+    @include flex(space-around, center, row);
+  }
+}

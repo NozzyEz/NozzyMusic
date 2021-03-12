@@ -1,0 +1,39 @@
+@use '../abstracts/index' as *;
+
+.song-container {
+  @include flex(center, center, column);
+  min-height: 55vh;
+  .song-cover {
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px $shadow-color1, 2px 2px 80px $shadow-color2;
+    &.active {
+      animation: rotation 16s infinite linear;
+    }
+  }
+  .song-name,
+  .song-author {
+    padding: 3rem 1rem 1rem 1rem;
+    &.active {
+      animation: scale 5s alternate infinite ease;
+    }
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
