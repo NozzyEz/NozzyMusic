@@ -15,3 +15,5 @@ see it in action at: https://nozzyez.github.io/NozzyMusic/
 App was created using react, it is a single page application, it does not use Redux.
 
 Styling is done with SCSS
+
+_App is not mobile friendly currently_
