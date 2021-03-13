@@ -52,6 +52,56 @@ function ChillHop() {
       audio: 'https://mp3.chillhop.com/serve.php/?mp3=10265',
       active: false,
     },
+    {
+      id: uuidv4(),
+      name: 'New Horizons',
+      author: 'Nymano & Epektase',
+      cover:
+        'https://chillhop.com/wp-content/uploads/2020/09/09fb436604242df99f84b9f359acb046e40d2e9e-1024x1024.jpg',
+      colors: ['#574F8C', '#171312'],
+      audio: 'https://mp3.chillhop.com/serve.php/?mp3=10142',
+      active: false,
+    },
+    {
+      id: uuidv4(),
+      name: 'Sombre',
+      author: 'Psalm Trees & Guillaume Muschalle',
+      cover:
+        'https://chillhop.com/wp-content/uploads/2020/07/6fe1f08735f7c54e10e72d2f9d1bec4c78ca01bf-1024x1024.jpg',
+      colors: ['#B1856C', '#DAA495'],
+      audio: 'https://mp3.chillhop.com/serve.php/?mp3=9504',
+      active: false,
+    },
+    {
+      id: uuidv4(),
+      name: 'Bright Mornings',
+      author: 'Sundreamer & Edapollo',
+      cover:
+        'https://chillhop.com/wp-content/uploads/2021/02/08cbb0848f669e1bd8b5a5152c4b7d20edf1b499-1024x1024.jpg',
+      colors: ['#15201E', '#320B13'],
+      audio: 'https://mp3.chillhop.com/serve.php/?mp3=9212',
+      active: false,
+    },
+    {
+      id: uuidv4(),
+      name: 'Far From Home',
+      author: 'Toonorth',
+      cover:
+        'https://chillhop.com/wp-content/uploads/2020/07/ad7fc4dda66ba986466fd2b1c416b0b12411ee28-1024x1024.jpg',
+      colors: ['#70A39C', '#9ABC97'],
+      audio: 'https://mp3.chillhop.com/serve.php/?mp3=8127',
+      active: false,
+    },
+    {
+      id: uuidv4(),
+      name: 'Backyard Puddles',
+      author: 'Sleepy Fish',
+      cover:
+        'https://chillhop.com/wp-content/uploads/2020/09/c209a7df7b9bc133dfff73ce86ebc3c57c2b73dd-1024x1024.jpg',
+      colors: ['#2E304F', '#7ABBCF'],
+      audio: 'https://mp3.chillhop.com/serve.php/?mp3=10032',
+      active: false,
+    },
   ];
 }
 
