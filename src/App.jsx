@@ -1,8 +1,7 @@
 //React imports
 import {useEffect, useState, useRef} from 'react';
 // styles
-import './scss/components/_app.scss';
-import './scss/components/_dark-mode.scss';
+import './scss/App.scss';
 
 //music
 import data from './data';
@@ -16,6 +15,10 @@ import Nav from './components/Nav';
 // main app
 function App() {
   const audioRef = useRef(null);
+
+  // Check if on mobile
+  const mql = window.matchMedia('(max-width: 500px');
+  let mobileView = mql.matches;
 
   // state
   const [isDark, setDark] = useState(false);
@@ -45,6 +48,10 @@ function App() {
     const percentage = (currentTime / duration) * 100;
 
     setSongInfo({...songInfo, currentTime: currentTime, duration, animationPercentage: percentage});
+  }
+
+  function playlistCloseHandler() {
+    if (isPlaylistOpen && mobileView) setIsPlaylistOpen(!isPlaylistOpen);
   }
 
   //* handler for when a track is ended, here it checks if user has repeat one, all or none selected and behaves accordingly
@@ -79,42 +86,44 @@ function App() {
   // render
   return (
     <div className="App">
-      <Nav
-        isPlaylistOpen={isPlaylistOpen}
-        setIsPlaylistOpen={setIsPlaylistOpen}
-        isDark={isDark}
-        setDark={setDark}
-      />
-      <Track current={current} isPlaying={isPlaying} isDark={isDark} />
-      <Player
-        audioRef={audioRef}
-        isDark={isDark}
-        current={current}
-        songInfo={songInfo}
-        setSongInfo={setSongInfo}
-        isPlaying={isPlaying}
-        setIsPlaying={setIsPlaying}
-        hasRepeatOne={hasRepeatOne}
-        setRepeatOne={setRepeatOne}
-        hasRepeatAll={hasRepeatAll}
-        setRepeatAll={setRepeatAll}
-        hasShuffle={hasShuffle}
-        setShuffle={setShuffle}
-        setCurrent={setCurrent}
-        tracks={tracks}
-      />
-      <footer className={`${isDark ? 'dark-mode' : ''}`}>
-        <h4>Created by: Mark Sahlgreen &copy; 2021</h4>
-        <div className="credit">
-          <h4>Music imported from</h4>
-          <a href="https://chillhop.com/" target="_blank" rel="noreferrer">
-            <img
-              src="https://chillhop.com/wp-content/themes/chillhop/assets/images/Chillhop_white.svg"
-              alt="ChillHop Logo"
-            />
-          </a>
-        </div>
-      </footer>
+      <div className="app-container" onClick={playlistCloseHandler}>
+        <Nav
+          isPlaylistOpen={isPlaylistOpen}
+          setIsPlaylistOpen={setIsPlaylistOpen}
+          isDark={isDark}
+          setDark={setDark}
+        />
+        <Track current={current} isPlaying={isPlaying} isDark={isDark} />
+        <Player
+          audioRef={audioRef}
+          isDark={isDark}
+          current={current}
+          songInfo={songInfo}
+          setSongInfo={setSongInfo}
+          isPlaying={isPlaying}
+          setIsPlaying={setIsPlaying}
+          hasRepeatOne={hasRepeatOne}
+          setRepeatOne={setRepeatOne}
+          hasRepeatAll={hasRepeatAll}
+          setRepeatAll={setRepeatAll}
+          hasShuffle={hasShuffle}
+          setShuffle={setShuffle}
+          setCurrent={setCurrent}
+          tracks={tracks}
+        />
+        <footer className={`${isDark ? 'dark-mode' : ''}`}>
+          <h4>Created by: Mark Sahlgreen &copy; 2021</h4>
+          <div className="credit">
+            <h4>Music imported from</h4>
+            <a href="https://chillhop.com/" target="_blank" rel="noreferrer">
+              <img
+                src="https://chillhop.com/wp-content/themes/chillhop/assets/images/Chillhop_white.svg"
+                alt="ChillHop Logo"
+              />
+            </a>
+          </div>
+        </footer>
+      </div>
       <Playlist
         tracks={tracks}
         setCurrent={setCurrent}

@@ -1,8 +1,5 @@
 import PlaylistItem from './PlaylistItem';
 
-import '../scss/components/_playlist.scss';
-import '../scss/components/_dark-mode.scss';
-
 function Playlist({tracks, setCurrent, audioRef, isPlaying, isPlaylistOpen, isDark}) {
   return (
     <div className={`playlist ${isPlaylistOpen ? 'active' : ''} ${isDark ? 'dark-mode' : ''}`}>

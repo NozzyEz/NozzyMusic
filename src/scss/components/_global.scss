@@ -59,6 +59,7 @@ button {
 footer {
   height: 10vh;
   @include flex(space-evenly, center, row);
+
   .credit {
     @include flex(flex-end, center, row);
     img {

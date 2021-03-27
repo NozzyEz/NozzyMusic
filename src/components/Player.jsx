@@ -10,10 +10,6 @@ import {
   faRandom,
 } from '@fortawesome/free-solid-svg-icons';
 
-// styles
-import '../scss/components/_player.scss';
-import '../scss/components/_dark-mode.scss';
-
 const Player = ({
   audioRef,
   current,
@@ -133,35 +129,37 @@ const Player = ({
         <p>{formatTime(songInfo.duration)}</p>
       </div>
       <div className="play-control">
-        <span className="repeater">Shuffle {shuffleVal}</span>
-        <FontAwesomeIcon
-          onClick={shuffleBtnHandler}
-          className="shuffle-btn"
-          icon={faRandom}
-          size="3x"
-        />
-        <FontAwesomeIcon
-          onClick={() => changeTrackHandler('previous')}
-          className="previous-btn"
-          icon={faStepBackward}
-          size="3x"
-        />
-        {/* setting either a play or a pause button depending if music is being played */}
-        <FontAwesomeIcon
-          onClick={playBtnHandler}
-          className="play-btn"
-          icon={!isPlaying ? faPlay : faPause}
-          size="3x"
-        />
-        <FontAwesomeIcon onClick={stopBtnHandler} className="stop-btn" icon={faStop} size="3x" />
-        <FontAwesomeIcon
-          onClick={() => changeTrackHandler('next')}
-          className="next-btn"
-          icon={faStepForward}
-          size="3x"
-        />
-        <FontAwesomeIcon onClick={repeatBtnHandler} icon={faRetweet} size="3x" />
-        <span className="repeater">Repeat {repeatVal}</span>
+        <span className="shuffle-info">Shuffle {shuffleVal}</span>
+        <div className="play-btns">
+          <FontAwesomeIcon
+            onClick={shuffleBtnHandler}
+            className="shuffle-btn"
+            icon={faRandom}
+            size="3x"
+          />
+          <FontAwesomeIcon
+            onClick={() => changeTrackHandler('previous')}
+            className="previous-btn"
+            icon={faStepBackward}
+            size="3x"
+          />
+          {/* setting either a play or a pause button depending if music is being played */}
+          <FontAwesomeIcon
+            onClick={playBtnHandler}
+            className="play-btn"
+            icon={!isPlaying ? faPlay : faPause}
+            size="3x"
+          />
+          <FontAwesomeIcon onClick={stopBtnHandler} className="stop-btn" icon={faStop} size="3x" />
+          <FontAwesomeIcon
+            onClick={() => changeTrackHandler('next')}
+            className="next-btn"
+            icon={faStepForward}
+            size="3x"
+          />
+          <FontAwesomeIcon onClick={repeatBtnHandler} icon={faRetweet} size="3x" />
+        </div>
+        <span className="repeat-info">Repeat {repeatVal}</span>
       </div>
     </div>
   );

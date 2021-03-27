@@ -1,7 +1,3 @@
-// styles
-import '../scss/components/_track.scss';
-import '../scss/components/_dark-mode.scss';
-
 function Track({current, isPlaying, isDark}) {
   return (
     <div className={`song-container ${isDark ? 'dark-mode' : ''}`}>

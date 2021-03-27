@@ -1,0 +1,102 @@
+@use '../abstracts/index' as *;
+
+@media (max-width: 1366px) {
+  .song-container {
+    .song-cover {
+      max-width: 30vw;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+  .nav-bar {
+    flex-wrap: wrap;
+    button {
+      margin-top: 1.5rem;
+      width: 30rem;
+      h2 {
+        text-align: center;
+      }
+      button {
+        flex: 1 1 40rem;
+      }
+    }
+  }
+  .song-container {
+    max-height: 35vh;
+    .song-cover {
+      max-width: 50vw;
+    }
+    .song-name,
+    .song-author {
+      padding: 1rem;
+    }
+  }
+  .player {
+    min-height: 20vh;
+    .time-control {
+      width: 90%;
+    }
+    .play-control {
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 90vw;
+
+      .play-btns {
+        width: 50vw;
+      }
+    }
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+}
+@media (max-height: 768px) {
+  .song-container {
+    .song-cover {
+      max-width: 35vw;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    @include flex(center, center, column);
+  }
+  .song-container {
+    max-height: 50vh;
+    min-height: 50vh;
+  }
+  .play-control {
+    flex-direction: column !important;
+    .play-btns {
+      order: 1;
+    }
+    .shuffle-info,
+    .repeat-info {
+      order: 2;
+
+      margin-top: 1.5rem;
+      width: 25rem;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .song-container {
+    max-height: 40vh;
+    min-height: 40vh;
+    .song-cover {
+      max-width: 40vw !important;
+    }
+  }
+  .play-control {
+    padding: 0;
+    .play-btns {
+      width: 100% !important;
+    }
+  }
+}

@@ -3,19 +3,20 @@
 .playlist {
   background-color: $background-color;
   position: fixed;
+  overflow: scroll;
   top: 0;
   left: 0;
   width: 30rem;
   height: 100%;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.5s ease;
 
   box-shadow: 2px 2px 20px $shadow-color1, 2px 2px 80px $shadow-color2;
   h3 {
     padding: 1rem;
     text-align: center;
   }
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: transform 0.5s ease;
 
   &.active {
     transform: translateX(0%);

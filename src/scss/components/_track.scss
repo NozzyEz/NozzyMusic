@@ -4,7 +4,7 @@
   @include flex(center, center, column);
   min-height: 55vh;
   .song-cover {
-    width: 20%;
+    max-width: 20vw;
     border-radius: 50%;
     box-shadow: 2px 2px 20px $shadow-color1, 2px 2px 80px $shadow-color2;
     &.active {

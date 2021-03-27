@@ -13,7 +13,7 @@
       background-color: lightcoral;
       position: relative;
       border-radius: 1rem;
-      overflow: hidden;
+      overflow-x: hidden;
       input {
         width: 100%;
         // padding: 2rem 0rem;
@@ -51,7 +51,12 @@
     svg {
       cursor: pointer;
     }
-    .repeater {
+    .play-btns {
+      width: 50%;
+      @include flex(space-between, center, row);
+    }
+    .shuffle-info,
+    .repeat-info {
       font-size: $paragraph;
       padding: 0.8rem 1.2rem;
       border-radius: 1rem;

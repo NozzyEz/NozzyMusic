@@ -1,5 +1,3 @@
-import '../scss/components/_dark-mode.scss';
-
 function PlaylistItem({track, tracks, audioRef, setCurrent, isPlaying, isDark}) {
   //* change current track based on which one is clicked
   async function setCurrentHandler(e) {
