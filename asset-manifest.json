@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/NozzyMusic/static/css/main.565e023f.chunk.css",
-    "main.js": "/NozzyMusic/static/js/main.d21ea4e1.chunk.js",
-    "main.js.map": "/NozzyMusic/static/js/main.d21ea4e1.chunk.js.map",
-    "runtime-main.js": "/NozzyMusic/static/js/runtime-main.fb1efeab.js",
-    "runtime-main.js.map": "/NozzyMusic/static/js/runtime-main.fb1efeab.js.map",
-    "static/js/2.cbc53ffc.chunk.js": "/NozzyMusic/static/js/2.cbc53ffc.chunk.js",
-    "static/js/2.cbc53ffc.chunk.js.map": "/NozzyMusic/static/js/2.cbc53ffc.chunk.js.map",
-    "static/js/3.a7d81225.chunk.js": "/NozzyMusic/static/js/3.a7d81225.chunk.js",
-    "static/js/3.a7d81225.chunk.js.map": "/NozzyMusic/static/js/3.a7d81225.chunk.js.map",
+    "main.css": "/NozzyMusic/static/css/main.20fa3908.chunk.css",
+    "main.js": "/NozzyMusic/static/js/main.f0f41e64.chunk.js",
+    "main.js.map": "/NozzyMusic/static/js/main.f0f41e64.chunk.js.map",
+    "runtime-main.js": "/NozzyMusic/static/js/runtime-main.c8b653dc.js",
+    "runtime-main.js.map": "/NozzyMusic/static/js/runtime-main.c8b653dc.js.map",
+    "static/js/2.42d842d4.chunk.js": "/NozzyMusic/static/js/2.42d842d4.chunk.js",
+    "static/js/2.42d842d4.chunk.js.map": "/NozzyMusic/static/js/2.42d842d4.chunk.js.map",
+    "static/js/3.e5d37b9d.chunk.js": "/NozzyMusic/static/js/3.e5d37b9d.chunk.js",
+    "static/js/3.e5d37b9d.chunk.js.map": "/NozzyMusic/static/js/3.e5d37b9d.chunk.js.map",
     "index.html": "/NozzyMusic/index.html",
-    "static/css/main.565e023f.chunk.css.map": "/NozzyMusic/static/css/main.565e023f.chunk.css.map",
-    "static/js/2.cbc53ffc.chunk.js.LICENSE.txt": "/NozzyMusic/static/js/2.cbc53ffc.chunk.js.LICENSE.txt",
-    "static/media/_nav.scss": "/NozzyMusic/static/media/FjallaOne-Regular.c674a102.ttf"
+    "static/css/main.20fa3908.chunk.css.map": "/NozzyMusic/static/css/main.20fa3908.chunk.css.map",
+    "static/js/2.42d842d4.chunk.js.LICENSE.txt": "/NozzyMusic/static/js/2.42d842d4.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/NozzyMusic/static/media/FjallaOne-Regular.c674a102.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.fb1efeab.js",
-    "static/js/2.cbc53ffc.chunk.js",
-    "static/css/main.565e023f.chunk.css",
-    "static/js/main.d21ea4e1.chunk.js"
+    "static/js/runtime-main.c8b653dc.js",
+    "static/js/2.42d842d4.chunk.js",
+    "static/css/main.20fa3908.chunk.css",
+    "static/js/main.f0f41e64.chunk.js"
   ]
 }
